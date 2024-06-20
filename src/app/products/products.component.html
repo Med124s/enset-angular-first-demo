@@ -1,0 +1,61 @@
+<div class="card">
+  <app-error-message></app-error-message>
+
+  <div class="mb-3 p-2 ">
+     <input [(ngModel)]="appState.productState.keyword" type="text" name="keyword" placeholder="name">
+    <button class="btn btn-info mx-1" (click)="searchProducts()">
+      <i class="bi bi-search"></i>
+    </button>
+
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>#Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Checked</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+
+      <tbody *ngIf="appState.productState.products">
+
+         <tr *ngFor="let p of appState.productState.products">
+           <td>{{p.id}}</td>
+           <td>{{p.name}}</td>
+           <td>{{p.price}}</td>
+
+           <td *ngIf="appState.authState.roles?.includes('ADMIN')">
+             <button class="btn btn-outline-success"
+              (click) = "handleProductCheck(p)">
+                <i [ngClass]="p.checked?'bi bi-check':'bi bi-circle'"></i>
+             </button>
+           </td>
+
+           <td *ngIf="appState.authState.roles?.includes('ADMIN')">
+              <button class="btn btn-danger" (click)="deleteProduct(p)">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+           </td>
+
+           <td *ngIf="appState.authState.roles?.includes('ADMIN')">
+             <button class="btn btn-success" (click)="updateProduct(p)">
+               <i class="bi bi-pen-fill"></i>
+             </button>
+           </td>
+
+         </tr>
+      </tbody>
+    </table>
+    <ul class="nav nav-pills" >
+      <li *ngFor="let p of [].constructor(appState.productState.totalPages);let i=index ">
+        <button (click)="handlePagination(i+1)" [ngClass]="appState.productState.currentPage == (i+1)?
+        'btn btn-success mx-1':'btn btn-outline-success mx-1'">
+          {{i+1}}
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

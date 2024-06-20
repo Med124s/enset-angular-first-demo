@@ -1,0 +1,28 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-header">
+       <h3>Product Id: {{productId}}</h3>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6" *ngIf="EditProductForm">
+          <form [formGroup]="EditProductForm" (ngSubmit)="editProduct()">
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input  class="form-control" type="text" formControlName="name" id="name">
+            </div>
+            <div  class="mb-3">
+              <label class="form-label" for="price">Price</label>
+              <input class="form-control" type="text" formControlName="price" id="price">
+            </div>
+            <div  class="mb-3">
+              <label class="form-label" for="checked">checked</label>
+              <input class="form-check-input" type="checkbox" formControlName="checked" id="checked">
+            </div>
+            <input [disabled]="EditProductForm.invalid" class="btn btn-success" type="submit" value="save">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+{
+  "Users": [
+    {
+      "id": "user1",
+      "password": "MTIzNA==",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxoc290OjgwODkvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoiTW9oYW1lZCIsImxhc3RuYW1lIjoiQmVuWWdoaWwiLCJlbWFpbCI6Im1lZC4yMDE2LmJlbkBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIl19.yiQvnhCTTkjX-R4teM_yDscelE7-5JgeU_WxdvBqYoM",
+      "roles": [
+        "USER"
+      ]
+    },
+    {
+      "id": "admin",
+      "password": "MTIzNA==",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxoc290OjgwODkvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoiWmluZWIiLCJsYXN0bmFtZSI6IlNhbG1pIiwiZW1haWwiOiJ6aW5lYi4yMDE2LmJlbkBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iXX0.RXK4Rbf9fthpwIjb1udxjBJqiRClYLTDpm02JlV2ttA",
+      "roles": [
+        "USER",
+        "ADMIN"
+      ]
+    },
+    {
+      "id": "user2",
+      "password": "MTIzNA==",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNTE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxoc290OjgwODkvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoiQWRpbCIsImxhc3RuYW1lIjoiT2JhaGEiLCJlbWFpbCI6ImFkaWwuMjAxNi5iZW5AZ21haWwuY29tIiwicm9sZXMiOlsiVVNFUiJdfQ.k4C0Yt8Ln3bIfV7W8XNYacXbUjv3kGF-KRmvBRjGJNo",
+      "roles": [
+        "USER"
+      ]
+    }
+  ],
+  "Products": [
+    {
+      "id": "101",
+      "name": "Imprimant1023",
+      "price": 658,
+      "checked": true
+    },
+    {
+      "id": "102",
+      "name": "Ecran",
+      "price": 658,
+      "checked": false
+    },
+    {
+      "id": "103",
+      "name": "Pc Portable",
+      "price": 658,
+      "checked": true
+    },
+    {
+      "id": "104",
+      "name": "Scanner",
+      "price": 658,
+      "checked": false
+    }
+  ]
+}

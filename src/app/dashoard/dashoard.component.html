@@ -1,0 +1,29 @@
+<div class="p-3">
+<div class="card">
+  <div class="card-body">
+    <div class="nav nav-pills">
+      <li class="bg-danger text-white border-1 border-danger p-2 mx-2">
+        Pages:
+        <span>
+          {{appState.productState.totalPages}}
+        </span>
+      </li>
+      <li class="bg-primary text-white border-1 border-primary p-2 mx-2">Size:
+        <span>
+          {{appState.productState.pageSize}}
+        </span>
+      </li>
+      <li class="bg-info text-white border-1 border-info p-2 mx-2">Total:
+        <span>
+          {{this.appState.productState.totalProducts}}
+        </span>
+      </li>
+      <li class="bg-success text-white border-1 border-success p-2 mx-2">Checked:
+        <span>
+          {{handleCheckedProducts()}}
+        </span>
+      </li>
+    </div>
+  </div>
+</div>
+</div>
