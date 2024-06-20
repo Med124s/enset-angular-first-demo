@@ -1,17 +1,17 @@
 <h3>Création d'une application web Angular qui permet de gérer des produits avec un backend basé 
 sur Json-server<h3>
 <hr>
-<strong>Authentification</strong>
-  <br><br>
+<strong>Authentification:</strong>
+  <br>
 <img src="captures/login_bad_credential.PNG" alt="login">
- <br><br>
-  <strong>Admin Interface</strong>
+ <br>
+  <strong>Admin Interface:</strong>
 <img src="captures/Admin.PNG" alt="admin">
- <br><br>
-  <strong>Add New Product</strong>
+ <br>
+  <strong>Add New Product:</strong>
 <img src="captures/NewProduct.PNG" alt="new product">
- <br><br>
-  <strong>Not Authorize User </strong>
+ <br>
+  <strong>Not Authorize User: </strong>
 <img src="captures/Not_Authorize_User.PNG" alt="new product">
 <br>
 
